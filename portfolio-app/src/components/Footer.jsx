@@ -32,7 +32,7 @@ export const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative bg-card border-t border-border overflow-hidden text-lg">
+    <footer className="relative bg-card border-t border-border overflow-hidden text-sm">
 
       {/* ── Decorative background ── */}
       <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
@@ -59,7 +59,7 @@ export const Footer = () => {
                 Japheth<span className="text-primary">.</span>
               </span>
             </a>
-            <p className="text-lg text-muted-foreground leading-relaxed max-w-[260px]">
+            <p className="text-sm text-muted-foreground leading-relaxed max-w-[260px]">
               Crafting thoughtful digital experiences — one line of code at a time.
             </p>
             {/* Socials */}
@@ -91,14 +91,14 @@ export const Footer = () => {
                   {/* Mobile pill */}
                   <a
                     href={href}
-                    className="md:hidden inline-flex px-3 py-1.5 rounded-full border border-border/50 text-lg font-medium text-muted-foreground hover:text-primary hover:border-primary/40 hover:bg-primary/5 transition-all duration-200"
+                    className="md:hidden inline-flex px-3 py-1.5 rounded-full border border-border/50 text-sm font-medium text-muted-foreground hover:text-primary hover:border-primary/40 hover:bg-primary/5 transition-all duration-200"
                   >
                     {label}
                   </a>
                   {/* Desktop list item */}
                   <a
                     href={href}
-                    className="hidden md:flex items-center gap-1.5 text-lg text-muted-foreground hover:text-primary transition-colors duration-200 group"
+                    className="hidden md:flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors duration-200 group"
                   >
                     <span className="h-px w-3 bg-primary/40 opacity-0 group-hover:opacity-100 transition-all duration-200" />
                     {label}
@@ -116,19 +116,19 @@ export const Footer = () => {
             <div className="space-y-3 flex flex-col items-center md:items-start">
               <a
                 href="mailto:japhethanold2@gmail.com"
-                className="inline-flex items-center gap-2.5 text-lg text-muted-foreground hover:text-primary transition-colors duration-200 group"
+                className="inline-flex items-center gap-2.5 text-sm text-muted-foreground hover:text-primary transition-colors duration-200 group"
               >
                 <div className="shrink-0 p-1.5 rounded-md bg-primary/10 group-hover:bg-primary/20 transition-colors duration-200">
                   <Mail className="h-3 w-3 text-primary" />
                 </div>
-                <span className="text-lg sm:text-lg break-all">japhethanold2@gmail.com</span>
+                <span className="text-sm sm:text-sm break-all">japhethanold2@gmail.com</span>
               </a>
-              <p className="text-lg text-muted-foreground/60 leading-relaxed max-w-[220px]">
+              <p className="text-sm text-muted-foreground/60 leading-relaxed max-w-[220px]">
                 Open to freelance, full-time roles, and exciting collaborations.
               </p>
               <a
                 href="#contact"
-                className="cosmic-button inline-flex items-center gap-2 px-4 py-2 text-lg font-semibold tracking-wide mt-1"
+                className="cosmic-button inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold tracking-wide mt-1"
               >
                 Start a Conversation
               </a>
@@ -147,7 +147,7 @@ export const Footer = () => {
           <a
             href="#hero"
             aria-label="Back to top"
-            className="group flex items-center gap-2 text-lg text-muted-foreground hover:text-primary transition-colors duration-200 order-1 sm:order-3"
+            className="group flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors duration-200 order-1 sm:order-3"
           >
             <span className="font-bold">Back to top</span>
             <div className="p-1.5 animate-bounce font-bold text-primary/60 rounded-full border border-border/60 group-hover:border-primary/40 border-primary/40 group-hover:bg-primary/10 transition-all duration-200">
@@ -158,12 +158,12 @@ export const Footer = () => {
             </div>
           </a>
 
-          <p className="text-lg text-muted-foreground/40 order-2 text-center font-bold">
+          <p className="text-sm text-muted-foreground/40 order-2 text-center font-bold">
             Designed &amp; Maintained by{" "}
             <span className="text-primary/60 font-bold">Japheth Anold</span>
           </p>
 
-          <p className="text-lg font-bold text-muted-foreground/50 text-center order-3 sm:order-1">
+          <p className="text-sm font-bold text-muted-foreground/50 text-center order-3 sm:order-1">
             &copy; {year} Japheth Anold. All rights reserved.
           </p>
 
