@@ -33,12 +33,18 @@ export const HeroSection = () => {
               I focus on <span className="text-primary/90">Fullstack.</span> Am a tech enthusiast with deep passion in web applications,computer Networks and Machine Learning
             </p>
 
-            <div className="pt-2 opacity-0 animate-fade-in-delay-4 flex justify-center lg:justify-start">
+            <div className="pt-2 opacity-0 animate-fade-in-delay-4 flex gap-8 justify-center lg:justify-start">
               <a
                 href="#projects"
-                className="cosmic-button px-8 py-3 rounded-full font-medium transition-all"
+                className="cosmic-button px-6 py-2 rounded-full font-medium transition-all"
               >
                 View My Work
+              </a>
+              <a
+                href="#contact"
+                className="cosmic-button px-6 py-2 rounded-full font-medium transition-all"
+              >
+                Hire Me
               </a>
             </div>
           </div>
