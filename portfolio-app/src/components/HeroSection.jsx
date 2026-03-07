@@ -1,5 +1,6 @@
 import { ArrowDown } from "lucide-react";
 import hero_image from "../assets/hero_image.png";
+import Typewriter from 'typewriter-effect';
 
 export const HeroSection = () => {
   return (
@@ -12,17 +13,20 @@ export const HeroSection = () => {
         {/* LEFT SIDE: Text Content (Occupies 7 columns) */}
         <div className="lg:col-span-7 flex flex-col justify-center z-10 text-left  mt-25">
           <div className="space-y-3 max-w-2xl ">
-            <h1 className="text-3xl sm:text-3xl md:text-7xl font-bold tracking-tight leading-tight text-center lg:text-left">
-              <span className="opacity-0 animate-fade-in block"> Hi, I'm</span>
-              <span className="text-primary opacity-0 animate-fade-in-delay-1">
-                {" "}
-                Japheth Anold
-              </span>
-              <span className="text-gradient block opacity-0 animate-fade-in-delay-2">
-                {" "}
-                Dindi
-              </span>
-            </h1>
+            <h1 className="text-4xl sm:text-3xl md:text-7xl font-bold tracking-tight leading-tight text-center lg:text-left min-h-[1.2em]">
+  <span className="opacity-0 animate-fade-in inline-block">&nbsp;Hi, I'm</span>
+  <span className="text-primary opacity-0 animate-fade-in-delay-1 inline-block ml-3">
+    <Typewriter
+      options={{
+        strings: ['Japheth Anold Dindi'],
+        autoStart: true,
+        loop: true,
+        pauseFor: 3000, // Stay visible for 3 seconds before restarting
+        delay: 100,
+      }}
+    />
+  </span>
+</h1>
 
             <p className="text-xl text-center md:text-left md:text-3xl text-muted-foreground opacity-0 animate-fade-in-delay-3 leading-relaxed">
               I create stellar web experiences with modern technologies.
