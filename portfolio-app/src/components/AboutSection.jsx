@@ -4,19 +4,19 @@ export const AboutSection = () => {
   return (
     <section id="about" className="py-5 px-4 relative">
       {" "}
-      <div className="container mx-auto max-w-6xl">
+      <div className="sm:container mx-auto max-w-6xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
           About <span className="text-primary"> Me</span>
         </h2>
  
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center text-lg">
-          <div className="space-y-6 round-full bg-card p-4 card-hover space-x-2">
+          <div className="space-y-6 mt-5 rounded-md bg-card p-4 card-hover space-x-2">
             <h3 className="text-2xl font-semibold">
               Passionate <span className="text-primary/90">Web Developer</span> & Tech Enthusiast
             </h3>
             <div className="text-left space-y-6">
-              <p className="text-muted-foreground text-xl leading-loose font-[500]">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;With my current of experience in web development, I specialize
+              <p className="text-muted-foreground text-xl sm:leading-loose">
+                With my current of experience in web development, I specialize
                 in creating responsive, accessible, and performant web
                 applications using modern technologies.
                 I'm passionate about creating elegant solutions to complex

@@ -33,7 +33,7 @@ const projects = [
 export const Projects = () => {
   return (
     <section id="projects" className="py-12 px-4 relative">
-      <div className="container mx-auto max-w-7xl text-lg">
+      <div className="sm:container mx-auto max-w-7xl text-lg">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
           {" "}
           Featured <span className="text-primary"> Projects </span>

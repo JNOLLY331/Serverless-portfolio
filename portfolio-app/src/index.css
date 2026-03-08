@@ -67,7 +67,7 @@
     --background: 210 40% 98%;
     --foreground: 222 47% 11%;
 
-    --card: 0 0% 100%;
+    --card: 90 0% 100%;
 
     --primary: 250 47% 60%;
     --primary-foreground: 210 40% 98%;
@@ -79,7 +79,7 @@
     --background: 222 47% 4%;
     --foreground: 213 31% 91%;
 
-    --card: 222 47% 8%;
+    --card: 222 47% 9%;
 
     --primary: 250 65% 65%;
     --primary-foreground: 213 31% 91%;
@@ -128,7 +128,7 @@
 }
 
 @utility card-hover {
-  @apply transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg;
+  @apply transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl;
 }
 
 @utility gradient-border {

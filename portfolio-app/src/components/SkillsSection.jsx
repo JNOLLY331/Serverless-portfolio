@@ -23,18 +23,18 @@ const SkillCounter = ({ targetLevel, isVisible }) => {
 };
 
 const skills = [
-  { name: "HTML/CSS", level: 95, category: "frontend" },
-  { name: "JavaScript", level: 90, category: "frontend" },
-  { name: "React", level: 90, category: "frontend" },
+  { name: "HTML/CSS", level: 85, category: "frontend" },
+  { name: "JavaScript", level: 80, category: "frontend" },
+  { name: "React", level: 80, category: "frontend" },
   { name: "TypeScript", level: 85, category: "frontend" },
-  { name: "Tailwind CSS", level: 90, category: "frontend" },
+  { name: "Tailwind CSS", level: 80, category: "frontend" },
   { name: "Django", level: 80, category: "backend" },
   { name: "MongoDB", level: 70, category: "backend" },
   { name: "PostgreSQL", level: 65, category: "backend" },
-  { name: "Git/GitHub", level: 90, category: "tools" },
+  { name: "Git/GitHub", level: 80, category: "tools" },
   { name: "Docker", level: 70, category: "tools" },
   { name: "Figma", level: 85, category: "tools" },
-  { name: "VS Code", level: 95, category: "tools" },
+  { name: "VS Code", level: 85, category: "tools" },
 ];
 
 const categories = ["all", "frontend", "backend", "tools"];
@@ -65,7 +65,7 @@ export const SkillsSection = () => {
       ref={sectionRef}
       className="py-10 px-4 relative bg-background overflow-hidden"
     >
-      <div className="container mx-auto max-w-6xl relative z-10">
+      <div className="sm:container mx-auto max-w-6xl relative z-10">
         <h2 className="text-4xl md:text-5xl font-black mb-16 text-center tracking-tighter">
           TECHNICAL <span className="text-primary drop-shadow-[0_0_15px_rgba(var(--primary),0.5)]">SKILLS</span>
         </h2>
@@ -103,7 +103,7 @@ export const SkillsSection = () => {
                 <h3 className="font-black text-2xl group-hover:text-primary transition-colors"> 
                   {skill.name}
                 </h3>
-                <span className="text-xl font-mono font-black text-primary italic">
+                <span className="text-xl font-mono font-black text-primary">
                   <SkillCounter targetLevel={skill.level} isVisible={isVisible} />
                 </span>
               </div>

@@ -117,7 +117,7 @@ export const ContactSection = () => {
         </div>
       )}
 
-      <div className="container mx-auto max-w-5xl relative z-10">
+      <div className="sm:container mx-auto max-w-5xl relative z-10">
 
         {/* ── Eyebrow + Heading ── */}
         <div
@@ -155,7 +155,7 @@ export const ContactSection = () => {
             {contactInfo.map(({ icon: Icon, label, display, href }, i) => (
               <div
                 key={label}
-                className="group flex items-center gap-4 p-4 rounded-xl border border-border/50 bg-card/60 backdrop-blur-sm hover:border-primary/40 hover:shadow-md hover:shadow-primary/5 transition-all duration-300"
+                className="group flex items-center gap-4 p-2 rounded-xl border border-border/50 bg-card/60 backdrop-blur-sm hover:border-primary/40 hover:shadow-md hover:shadow-primary/5 transition-all duration-300"
                 style={{ transitionDelay: `${120 + i * 60}ms` }}
               >
                 <div className="shrink-0 p-2.5 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300">
@@ -198,10 +198,10 @@ export const ContactSection = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="group flex flex-col items-center gap-1.5 py-3.5 rounded-xl border border-border/50 bg-card/60 hover:border-primary/50 hover:bg-primary/5 hover:shadow-sm transition-all duration-300"
+                  className="group flex flex-col items-center gap-1.5 py-1.5 px-2 rounded-xl border border-border/50 bg-card/60 hover:border-primary/50 hover:bg-primary/5 hover:shadow-sm transition-all duration-300"
                 >
-                  <Icon className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors duration-200" />
-                  <span className="text-[9px] font-semibold tracking-wide uppercase text-muted-foreground/50 group-hover:text-primary/60 transition-colors duration-200">
+                  <Icon className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors duration-200" />
+                  <span className="text-[10px] font-semibold tracking-wide uppercase text-muted-foreground/50 group-hover:text-primary/60 transition-colors duration-200">
                     {label}
                   </span>
                 </a>
