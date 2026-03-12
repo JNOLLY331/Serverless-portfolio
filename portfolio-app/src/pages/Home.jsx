@@ -8,6 +8,7 @@ import { SkillsSection } from '../components/SkillsSection';
 import {Projects} from '../components/Projects'
 import {ContactSection} from '../components/ContactSection'
 import {Footer} from '../components/Footer'
+import Education from '../components/Education';
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <Navbar />
         <HeroSection />
         <AboutSection  />
+        <Education />
         <SkillsSection  />
         <Projects  />
         <ContactSection  />
