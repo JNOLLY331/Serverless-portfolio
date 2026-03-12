@@ -1,100 +1,106 @@
-import { Briefcase, Code, User, Network, MessageSquare, FileText } from "lucide-react";
+import { Briefcase, Code, User } from "lucide-react";
 
 export const AboutSection = () => {
-  const skills = [
-    {
-      title: "Web Apps Development",
-      desc: "Building scalable apps with React, Tailwind, and modern frameworks.",
-      icon: Code,
-    },
-    {
-      title: "UI/UX Design",
-      desc: "Crafting intuitive interfaces that prioritize user journey and aesthetics.",
-      icon: User,
-    },
-    {
-      title: "Project Management",
-      desc: "Utilizing Agile methodologies to deliver projects on time and in scope.",
-      icon: Briefcase,
-    },
-    {
-      title: "Computer Networks",
-      desc: "Designing and maintaining robust network infrastructures and security.",
-      icon: Network,
-    },
-  ];
-
   return (
-    <section id="about" className="py-5 px-4 relative overflow-hidden bg-background text-foreground">
-      <div className="container mx-auto max-w-6xl">
-        {/* Section Header */}
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
-            About <span className="text-primary text-glow">Me</span>
-          </h2>
-          <div className="w-20 h-1.5 bg-primary mx-auto rounded-full"></div>
-        </div>
+    <section id="about" className="py-5 px-4 relative">
+      {" "}
+      <div className="sm:container mx-auto max-w-6xl">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+          About <span className="text-primary"> Me</span>
+        </h2>
  
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          
-          {/* Left Column: Bio */}
-          <div className="lg:col-span-7 space-y-8 animate-fade-in-delay-1 bg-card border border-border p-8 md:p-10 rounded-3xl shadow-sm">
-            <h3 className="text-2xl md:text-3xl font-bold leading-tight">
-              Passionate <span className="text-primary">Web Developer</span> & <br className="hidden md:block" /> Tech Enthusiast
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center text-lg">
+          <div className="space-y-6 mt-5 rounded-md bg-card p-4 card-hover space-x-2">
+            <h3 className="text-2xl font-semibold">
+              Passionate <span className="text-primary/90">Web Developer</span> & Tech Enthusiast
             </h3>
-            
-            <div className="space-y-6 text-left">
-              <p className="text-slate-500 text-lg md:text-xl leading-relaxed">
-                With a deep focus on modern web ecosystems, I specialize in creating 
-                <span className="text-foreground font-medium"> responsive, accessible, and performant</span> web applications. 
-              </p>
-              <p className="text-slate-500 text-lg md:text-xl leading-relaxed">
-                I thrive on turning complex problems into elegant, functional solutions. My approach 
-                is rooted in continuous learning—I embrace challenges and mistakes as 
-                essential steps toward mastering the ever-evolving tech landscape.
+            <div className="text-left space-y-6">
+              <p className="text-muted-foreground text-xl sm:leading-loose">
+                With my current of experience in web development, I specialize
+                in creating responsive, accessible, and performant web
+                applications using modern technologies.
+                I'm passionate about creating elegant solutions to complex
+                problems, and I'm constantly learning new technologies and
+                techniques to stay at the forefront of the ever-evolving web
+                landscape.I empress mistakes and take them as a learning lesson.
               </p>
             </div>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-4 pt-6 justify-start">
-              <a href="#contact" className="cosmic-button flex items-center gap-2">
-                <MessageSquare className="w-4 h-4" />
+            <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
+              <a href="#contact" className="cosmic-button">
+                {" "}
                 Get In Touch
               </a>
 
               <a
                 href="/resumee.pdf"
                 download="japheth_Anold_Resumee"
-                className="group flex items-center gap-2 px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-all duration-300 font-medium"
+                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
-                <FileText className="w-4 h-4" />
                 Download CV
               </a>
             </div>
           </div>
 
-          {/* Right Column: Skill Cards */}
-          <div className="lg:col-span-5 grid grid-cols-1 gap-4 animate-fade-in-delay-2">
-            {skills.map((skill, index) => {
-              const IconComponent = skill.icon;
-              return (
-                <div key={index} className="gradient-border p-5 card-hover group bg-card/50">
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-2xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                      <IconComponent className="h-6 w-6" />
-                    </div>
-                    <div className="text-left">
-                      <h4 className="font-bold text-lg group-hover:text-primary transition-colors">
-                        {skill.title}
-                      </h4>
-                      <p className="text-slate-500 text-sm leading-snug mt-1">
-                        {skill.desc}
-                      </p>
-                    </div>
-                  </div>
+          <div className="grid grid-cols-1 gap-6">
+            <div className="gradient-border p-6 card-hover">
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <Code className="h-6 w-6 text-primary" />
                 </div>
-              );
-            })}
+                <div className="text-left">
+                  <h4 className="font-semibold text-lg"> Web Apps Development</h4>
+                  <p className="text-muted-foreground">
+                    Creating responsive websites and web applications with
+                    modern frameworks.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="gradient-border p-6 card-hover">
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <User className="h-6 w-6 text-primary" />
+                </div>
+                <div className="text-left">
+                  <h4 className="font-semibold text-lg">UI/UX Design</h4>
+                  <p className="text-muted-foreground">
+                    Designing intuitive user interfaces and seamless user
+                    experiences.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="gradient-border p-6 card-hover">
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <Briefcase className="h-6 w-6 text-primary" />
+                </div>
+
+                <div className="text-left">
+                  <h4 className="font-semibold text-lg">Project Management</h4>
+                  <p className="text-muted-foreground">
+                    Leading projects from conception to completion with agile
+                    methodologies.
+                  </p>
+                </div>
+              </div>
+            </div>
+             <div className="gradient-border p-6 card-hover">
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <Briefcase className="h-6 w-6 text-primary" />
+                </div>
+
+                <div className="text-left">
+                  <h4 className="font-semibold text-lg">Computer Networks</h4>
+                  <p className="text-muted-foreground">
+                    Leading projects from conception to completion with agile
+                    methodologies.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
